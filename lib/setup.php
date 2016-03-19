@@ -95,12 +95,8 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
-
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
-
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+  wp_enqueue_style( 'sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
+  wp_enqueue_style( 'font/hind', '//fonts.googleapis.com/css?family=Hind:400,700', false, null );
+  wp_enqueue_script( 'sage/js', Assets\asset_path( 'scripts/main.js' ), [ 'jquery' ], null, true );
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
