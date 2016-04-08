@@ -1,5 +1,6 @@
 h1 {
   @include hind('48px', 700);
+  margin-top: .2em;
 }
 
 h2 {
@@ -21,4 +22,8 @@ h5 {
 
 p {
   @include hind('18px', 500);
+}
+
+a {
+  @include link-style();
 }

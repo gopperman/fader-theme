@@ -1,0 +1,17 @@
+$module: 'content-info';
+
+.#{$module} {
+  padding: 20px 0;
+  background: $black;
+  color: $white;
+  text-align: center;
+
+  a, a:hover, a:active {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  p {
+    margin: 0;
+  }
+}

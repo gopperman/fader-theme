@@ -1,0 +1,30 @@
+@mixin link-style() {
+  color: $purple;
+  text-decoration: none;
+  transition: all, .1s;
+  &:hover, &:active {
+    color: $midnight;
+    text-decoration: underline;
+  }
+}
+
+@mixin nav-link-style() {
+  color: $black;
+  font-weight: bold;
+  transition: all, .1s;
+  &:hover, &:active {
+    color: $purple;
+    text-decoration: none;
+  }
+}
+
+@mixin text-style() {
+  color: $gray;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+@mixin blog-container() {
+  padding: 50px 20px 20px;
+  max-width: 700px;
+}

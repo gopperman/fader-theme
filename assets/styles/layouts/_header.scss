@@ -1,0 +1,33 @@
+.banner {
+  background: $white;
+  border-bottom: 1px solid $black;
+  color: $black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.brand {
+  @include link-style();
+  @include nav-link-style();
+  float: left;
+  font-weight: bold;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.nav-primary {
+  display: inline-block;
+  float: right;
+}
+
+.menu-item {
+  display: inline-block;
+  float: left;
+
+  a {
+    @include link-style();
+    @include nav-link-style();
+    padding: 0 15px;
+  }
+}

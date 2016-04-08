@@ -1,0 +1,29 @@
+.post {
+  .container-fluid {
+    @include blog-container();
+  }
+
+  footer {
+    @include text-style();
+    background: $gray;
+    color: $white;
+    width: 100%;
+
+    .container-fluid {
+      padding: 25px 20px;
+    }
+  }
+}
+
+.post, .archive article {
+  p {
+    @include text-style();
+    margin: 1.6em 0;
+  }
+
+  img {
+    //Responsive image override
+    width: 100% !important;
+    height: auto !important;
+  }
+}

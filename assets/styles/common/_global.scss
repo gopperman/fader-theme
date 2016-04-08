@@ -1,1 +1,18 @@
+body {
+  padding-top: $nav-offset;
+}
 
+.entry-title {
+  a, a:hover, a:active {
+    color: $black;
+  }
+}
+
+.container-fluid {
+  max-width: 1024px
+}
+
+main.container-fluid {
+  @include blog-container();
+  padding-top: 0;
+}

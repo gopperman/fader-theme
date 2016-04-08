@@ -1,5 +1,5 @@
 <footer class="content-info">
   <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+    <p>&copy; Jonathan Fader. By <a href="http://gopperman.com">gopperman</a>.</p>
   </div>
 </footer>
