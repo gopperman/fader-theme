@@ -11,8 +11,3 @@ body {
 .container-fluid {
   max-width: 1024px
 }
-
-main.container-fluid {
-  @include blog-container();
-  padding-top: 0;
-}

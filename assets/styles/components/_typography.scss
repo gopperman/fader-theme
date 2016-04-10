@@ -1,27 +1,27 @@
 h1 {
-  @include hind('48px', 700);
+  @include hind(48px, 700);
   margin-top: .2em;
 }
 
 h2 {
-  @include hind('24px', 700);
+  @include hind(24px, 700);
 }
 
 h3 {
-  @include hind('21px', 700);
+  @include hind(21px, 700);
 }
 
 h4 {
-  @include hind('14px', 700);
+  @include hind(14px, 700);
   color: $blue;
 }
 
 h5 {
-  @include hind('14px', 500);
+  @include hind(14px, 500);
 }
 
 p {
-  @include hind('18px', 500);
+  @include hind(18px, 500);
 }
 
 a {

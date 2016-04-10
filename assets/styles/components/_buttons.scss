@@ -1,0 +1,19 @@
+$module: 'button';
+
+.#{$module} {
+  &__cat {
+    border: 1px solid $black;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 5px 15px;
+    transition: all, .2s;
+
+    &:active, &:hover {
+      background: $purple;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
