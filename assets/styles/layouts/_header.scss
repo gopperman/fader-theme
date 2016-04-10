@@ -22,6 +22,14 @@
   float: right;
 }
 
+.nav {
+  li>a:focus,
+  li>a:hover {
+    background: $midnight;
+    color: $white;
+    transition: all, .2s;
+  }
+}
 .menu-item {
   display: inline-block;
   float: left;
