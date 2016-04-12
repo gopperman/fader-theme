@@ -29,5 +29,15 @@ $module: 'button';
       color: $white;
       text-decoration: none;
     }
+
+    &-purple {
+      background: $purple;
+      border-radius: 4px;
+      color: $white;
+      &:active, &:hover {
+        background: $white;
+        color: $purple;
+      }
+    }
   }
 }
