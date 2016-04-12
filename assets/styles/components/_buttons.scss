@@ -8,7 +8,21 @@ $module: 'button';
     font-weight: bold;
     margin-bottom: 1em;
     padding: 5px 15px;
-    transition: all, .2s;
+    transition: all, .1s;
+
+    &:active, &:hover {
+      background: $purple;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  &__cta {
+    background: $white;
+    color: $purple;
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 24px;
+    transition: all, .1s;
 
     &:active, &:hover {
       background: $purple;
