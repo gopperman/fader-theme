@@ -1,12 +1,12 @@
 <?php
   $id = get_the_ID();
-  $header = get_post_meta( $id, 'content_header' )[0];
+  $header = get_post_meta( $id, 'homepage_header' )[0];
   $about = get_post_meta( $id, 'homepage_about' )[0];
   $content = get_post_meta( $id, 'homepage_content')[0];
   $product = get_post_meta( $id, 'homepage_product' )[0];
 ?>
 <div id="content-header" class="hero">
-  <div class="container">
+  <div class="container-fluid">
     <div class="col-sm-6">
       <h1><?php echo wp_kses_post( $header['header_text'] ); ?></h1>
       <h2><?php echo wp_kses_post( $header['header_description'] ); ?></h2>
@@ -20,14 +20,15 @@
 </div>
 <div class="content-areas row">
   <?php foreach ( $content as $area ) { ?>
-  <div class="col-md-4 content__area">
-    <div class="content__area-title"><?php echo wp_kses_post( $area['header_text'] ); ?></div>
-
-    <div class="hidden-md content__area-description">
-      <h2><?php echo wp_kses_post( $area['header_description'] ); ?></h2>
-      <a class="button__cta" href="<?php echo esc_url( get_the_permalink( $area['cta']['link'] ) ); ?>"><?php echo wp_kses_post( $area['cta']['text'] ); ?></a>
+    <div class="col-md-4 content__area">
+      <div class="content__area-title"><?php echo wp_kses_post( $area['header_text'] ); ?></div>
+      <div class="content__area-overlay hidden-md hidden-lg hidden-xl">
+        <div class="content__area-description">
+          <h2><?php echo wp_kses_post( $area['header_description'] ); ?></h2>
+          <a class="button__cta" href="<?php echo esc_url( get_the_permalink( $area['cta']['link'] ) ); ?>"><?php echo wp_kses_post( $area['cta']['text'] ); ?></a>
+        </div>
+      </div>
     </div>
-  </div>
   <? } ?>
 </div>
 <div class="product">

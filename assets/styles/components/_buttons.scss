@@ -36,7 +36,9 @@ $module: 'button';
       color: $white;
       &:active, &:hover {
         background: $white;
+        border: 1px solid $purple;
         color: $purple;
+        padding: 11px 23px;
       }
     }
   }
