@@ -8,6 +8,12 @@ $book: 'page-template-template-book';
 .hero {
   margin-top: $nav-offset;
   padding: 25px 0;
+
+  .button__cta,
+  .button__iBooks {
+    float: left;
+    margin-right: 10px;
+  }
 }
 
 .content__area {

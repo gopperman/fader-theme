@@ -20,8 +20,11 @@ while ( have_posts() ) : the_post();
         <div class="hero__description">
           <?php echo wp_kses_post( $hero['description'] ); ?>
         </div>
-        <a href="<?php echo esc_url( $hero['ctas']['link'] ); ?>" class="button__cta">
+        <a href="<?php echo esc_url( $hero['ctas']['link'] ); ?>" class="button__cta" target="_blank">
           <?php echo wp_kses_post( $hero['ctas']['text'] ); ?>
+        </a>
+        <a href="https://itunes.apple.com/us/book/life-as-sport/id1073407286?mt=11" class="button__iBooks" target="_blank">
+          <img src="/app/themes/fader/assets/images/iBooks.png" alt="iBook" />
         </a>
       </div>
     </div>
