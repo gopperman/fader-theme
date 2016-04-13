@@ -31,3 +31,14 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/** Hook up the contact form **/
+function contact_form_attributes( $atts, $item, $args ) {
+  if ($item->post_title === 'Contact') {
+    $atts['data-toggle'] = 'modal';
+    $atts['data-target'] = '#contact';
+  }
+
+  return $atts;
+}
+add_filter( 'nav_menu_link_attributes', __NAMESPACE__ . '\\contact_form_attributes', 10, 3 );

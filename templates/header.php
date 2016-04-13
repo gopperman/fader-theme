@@ -8,5 +8,6 @@
       endif;
       ?>
     </nav>
+    <a data-toggle="modal" data-target="#contact">Open Modal</button>
   </div>
 </header>

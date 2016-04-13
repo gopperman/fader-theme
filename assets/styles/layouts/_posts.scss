@@ -5,8 +5,9 @@
 
   footer {
     @include text-style();
-    background: $gray;
-    color: $white;
+    background: $gray-light;
+    color: $midnight;
+    margin-bottom: 0;
     width: 100%;
 
     .container-fluid {
