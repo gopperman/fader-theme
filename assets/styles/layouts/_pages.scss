@@ -36,8 +36,6 @@ $book: 'page-template-template-book';
     font-weight: bold;
   }
 
-
-
   &:first-child {
     background: url(#{$asset-path}images/practicearea-sports.jpg) no-repeat center center;
     @include cover();
@@ -50,9 +48,17 @@ $book: 'page-template-template-book';
     background: url(#{$asset-path}images/practicearea-cbt.jpg) no-repeat center center;
     @include cover();
   }
+
+  h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .#{$home} {
+  .button__cta {
+    margin-top: 1em;
+  }
+
   .hero {
     background: url(#{$asset-path}images/home-hero.jpg) no-repeat center center;
     padding-bottom: 100px;
@@ -73,10 +79,6 @@ $book: 'page-template-template-book';
       top: 50%;
       transform: translateY(-50%);
     }
-
-    .button__cta {
-      margin-top:1em;
-    }
   }
 }
 
@@ -87,11 +89,6 @@ $book: 'page-template-template-book';
     @include cover();
   }
 
-  .button__cta,
-  .button__iBooks {
-    float: left;
-    margin-right: 10px;
-  }
 }
 
 .#{$book} .hero,
@@ -120,16 +117,19 @@ $book: 'page-template-template-book';
     margin: 0 auto;
     max-width: 100%;
   }
+}
+
+.product {
+  margin: 50px 0 25px;
+
   .button__cta {
     margin-top: 1em;
   }
 }
 
-.product {
-  margin: 50px 0 25px;
-}
-
 .excerpts {
+  text-align: center;
+
   h4 {
     margin: 2em 0 0;
     a {
@@ -155,9 +155,9 @@ $book: 'page-template-template-book';
   padding-bottom: 50px;
 
   h4 {
-    text-align: center;
     color: $black;
     display: inline-block;
+    margin-left: 15px;
     width: 100%;
   }
 
@@ -189,6 +189,13 @@ $book: 'page-template-template-book';
   }
 }
 
+.worksheet {
+  &__link {
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .content-areas.row {
     margin-left: 0;
@@ -204,8 +211,30 @@ $book: 'page-template-template-book';
   .hero {
     min-height: 42vw;
   }
+
+  .#{$book} {
+    .button__cta,
+    .button__iBooks {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .hero {
+      .button__cta {
+        margin-top:1em;
+      }
+    }
+  }
+
+  .excerpts {
+    text-align: left;
+  }
+
   .testimonials {
     h4 {
+      margin-left: 0;
+      text-align: center;
+
       &:before, &:after {
         border-bottom: 1px solid $black;
         display: inline-block;

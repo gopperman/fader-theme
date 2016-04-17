@@ -18,10 +18,12 @@ $module: 'button';
   }
   &__cta {
     background: $white;
+    border-radius: 4px;
     color: $purple;
     display: inline-block;
     font-weight: bold;
-    padding: 12px 24px;
+    line-height: 1em;
+    padding: 12px 24px 10px;
     transition: all, .1s;
 
     &:active, &:hover {
@@ -44,6 +46,16 @@ $module: 'button';
   }
   &__iBooks {
     display: inline-block;
-    margin: 1.1em 0 0;
+    margin: 0.85em 0 0;
+    position: relative;
+    top: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .#{$module} {
+    &__iBooks {
+      top: 0;
+    }
   }
 }
