@@ -75,3 +75,17 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+// Contact Form Click Handlers
+jQuery(document).ready( function() {
+  jQuery('.wpcf7-text').on( 'focusin', function() {
+    var label= jQuery(this).parents('p').find('label');
+    jQuery(label).css("top", 40);
+  });
+  jQuery('.wpcf7-text').on( 'focusout', function() {
+    if ( '' === jQuery(this).val() ) {
+      var label= jQuery(this).parents('p').find('label');
+      jQuery(label).css("top", 0);
+    }
+  });
+});
