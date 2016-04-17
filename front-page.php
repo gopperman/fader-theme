@@ -7,7 +7,7 @@
 ?>
 <div id="content-header" class="hero">
   <div class="container-fluid">
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <h1><?php echo wp_kses_post( $header['header_text'] ); ?></h1>
       <h2><?php echo wp_kses_post( $header['header_description'] ); ?></h2>
       <?php if ( isset( $header['ctas'] ) ) {
@@ -16,6 +16,11 @@
         <?php }
       } ?>
     </div>
+  </div>
+</div>
+<div class="about">
+  <div class="about container-fluid">
+    <p><?php echo wp_kses_post( $about ); ?></p>
   </div>
 </div>
 <div class="content-areas row">
