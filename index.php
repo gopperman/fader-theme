@@ -1,8 +1,5 @@
 <?php $categories = get_categories(); ?>
 <div class="container-fluid">
-  <div class="col-xs-12">
-    <?php get_template_part('templates/page', 'header'); ?>
-  </div>
   <main class="col-md-7">
     <?php while (have_posts()) : the_post(); ?>
       <?php get_template_part('templates/content', 'excerpt'); ?>
