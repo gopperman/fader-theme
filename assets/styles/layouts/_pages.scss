@@ -126,6 +126,10 @@ $book: 'page-template-template-book';
 .product {
   margin: 50px 0 25px;
 
+  p {
+    color: $gray;
+  }
+
   .button__cta {
     margin-top: 1em;
   }
