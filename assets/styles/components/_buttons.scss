@@ -10,7 +10,7 @@ $module: 'button';
     padding: 5px 15px;
     transition: all, .1s;
 
-    &:active, &:hover {
+    &:active, &:hover, &:focus {
       background: $purple;
       color: $white;
       text-decoration: none;
@@ -26,7 +26,7 @@ $module: 'button';
     padding: 12px 24px 10px;
     transition: all, .1s;
 
-    &:active, &:hover {
+    &:active, &:hover, &:focus {
       background: $purple;
       color: $white;
       text-decoration: none;
@@ -36,7 +36,7 @@ $module: 'button';
       background: $purple;
       border-radius: 4px;
       color: $white;
-      &:active, &:hover {
+      &:active, &:hover, &:focus {
         background: $white;
         border: 1px solid $purple;
         color: $purple;

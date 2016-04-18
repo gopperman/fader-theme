@@ -4,7 +4,7 @@ body {
 }
 
 .entry-title {
-  a, a:hover, a:active {
+  a, a:hover, a:active, a:focus {
     color: $black;
   }
 }

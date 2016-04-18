@@ -2,7 +2,7 @@
   color: $purple;
   text-decoration: none;
   transition: all, .1s;
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     color: $midnight;
     text-decoration: underline;
   }
@@ -12,7 +12,7 @@
   color: $black;
   font-weight: bold;
   transition: all, .1s;
-  &:hover, &:active {
+  &:hover, &:active, &:focus {
     color: $purple;
     text-decoration: none;
   }

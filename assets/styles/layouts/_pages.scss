@@ -134,7 +134,7 @@ $book: 'page-template-template-book';
     margin: 2em 0 0;
     a {
       color: $purple;
-      &:active, &:hover {
+      &:active, &:hover, &:focus {
         color: $purple;
       }
     }
@@ -144,7 +144,7 @@ $book: 'page-template-template-book';
   }
   a {
     color: $black;
-    &:active, &:hover {
+    &:active, &:hover, &:focus {
       color: $black;
       text-decoration: underline;
     }

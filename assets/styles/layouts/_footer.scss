@@ -5,7 +5,7 @@ $module: 'content-info';
   background: $black;
   text-align: center;
 
-  a, a:hover, a:active {
+  a, a:hover, a:active, a:focus {
     color: $gray;
     text-decoration: underline;
   }
