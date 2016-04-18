@@ -36,11 +36,23 @@ $module: 'button';
       background: $purple;
       border-radius: 4px;
       color: $white;
+
       &:active, &:hover, &:focus {
         background: $white;
         border: 1px solid $purple;
         color: $purple;
         padding: 11px 23px;
+
+        a {
+          color: $purple;
+        }
+      }
+    }
+    &-purple a {
+      color: $white;
+      &:active, &:hover, &:focus {
+        color: $purple;
+        text-decoration: none;
       }
     }
   }
