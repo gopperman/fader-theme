@@ -66,6 +66,10 @@ $book: 'page-template-template-book';
     position: relative;
     @include cover();
 
+    h2 {
+      margin-top: 0;
+    }
+
     .container-fluid {
       height: 100%;
       max-width: 820px;
