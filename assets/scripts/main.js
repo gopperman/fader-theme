@@ -79,12 +79,15 @@
 // Contact Form Click Handlers
 jQuery(document).ready( function() {
   jQuery('.wpcf7-text').on( 'focusin', function() {
-    var label= jQuery(this).parents('p').find('label');
+    var el = jQuery(this);
+    var label = el.parents('p').find('label');
     jQuery(label).css("top", 40);
   });
+
   jQuery('.wpcf7-text').on( 'focusout', function() {
-    if ( '' === jQuery(this).val() ) {
-      var label= jQuery(this).parents('p').find('label');
+    var el = jQuery(this);
+    if ( '' === el.val() ) {
+      var label= el.parents('p').find('label');
       jQuery(label).css("top", 0);
     }
   });
