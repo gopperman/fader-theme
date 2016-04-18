@@ -19,7 +19,7 @@
   </div>
 </div>
 <div class="about">
-  <div class="about container-fluid">
+  <div class="container-fluid">
     <p><?php echo wp_kses_post( $about ); ?></p>
   </div>
 </div>

@@ -10,7 +10,7 @@
 
 @mixin nav-link-style() {
   color: $black;
-  font-weight: bold;
+  font-weight: 600;
   transition: all, .1s;
   &:hover, &:active, &:focus {
     color: $purple;

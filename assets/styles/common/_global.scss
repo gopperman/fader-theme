@@ -1,6 +1,8 @@
 body {
   padding-top: $nav-offset;
   font-family: 'Hind', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .entry-title {
