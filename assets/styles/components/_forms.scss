@@ -109,8 +109,10 @@ $contact: 'contact';
   &-submit {
     background: $purple;
     border: 0;
+    border-radius: 4px;
     color: $white;
     float: right;
+    font-family: 'Hind', sans-serif;
     font-size: 18px;
     padding: 0 24px;
     transition: all, .2s;
