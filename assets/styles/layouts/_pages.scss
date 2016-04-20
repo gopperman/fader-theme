@@ -92,7 +92,6 @@ $book: 'page-template-template-book';
     margin: $nav-offset 0 50px 0;
     @include cover();
   }
-
 }
 
 .#{$book} .hero,
@@ -108,11 +107,12 @@ $book: 'page-template-template-book';
   }
 
   strong {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   p {
     color: $white;
+    font-size: 22px;
     margin: 0;
   }
 

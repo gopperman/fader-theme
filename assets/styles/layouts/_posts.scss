@@ -17,9 +17,6 @@
 }
 
 .post, .archive article {
-  p {
-    @include text-style();
-  }
 
   img {
     //Responsive image override
