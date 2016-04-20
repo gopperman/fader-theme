@@ -62,7 +62,7 @@ while ( have_posts() ) : the_post();
       <div class="row">
         <?php foreach ( $worksheets as $ws ) { ?>
           <div class="col-sm-6 col-md-3">
-            <a href="<?php esc_url( get_permalink( $ws['worksheet_link'] ) ); ?>" class="worksheet__link">
+            <a href="<?php echo esc_url( get_permalink( $ws['worksheet_link'] ) ); ?>" class="worksheet__link">
             <?php if ( has_post_thumbnail( $ws['worksheet_link'] ) ) {
               $image = wp_get_attachment_image_src( get_post_thumbnail_id( $ws['worksheet_link'] ), 'single-post-thumbnail' ); ?>
               <img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php echo esc_attr( get_the_title( $ws['worksheet_link'] ) ); ?>"/>
