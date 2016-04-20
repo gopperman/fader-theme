@@ -26,3 +26,11 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+/*
+ * Check if link is external
+ */
+function is_external($url) {
+  $link = parse_url( $url );
+  return ( false === strpos( $link['host'], $_SERVER['SERVER_NAME'] ) ) ? false : true;
+}

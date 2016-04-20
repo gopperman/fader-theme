@@ -20,7 +20,7 @@ while ( have_posts() ) : the_post();
         <div class="hero__description">
           <?php echo wp_kses_post( $hero['description'] ); ?>
         </div>
-        <a href="<?php echo esc_url( $hero['ctas']['link'] ); ?>" class="button__cta" target="_blank">
+        <a href="<?php echo esc_url( $hero['ctas']['link'] ); ?>" class="button__cta"<?php if ( ! is_external( $hero['ctas']['link'] ) ) { ?> target="_blank"<?php } ?>>
           <?php echo wp_kses_post( $hero['ctas']['text'] ); ?>
         </a>
         <a href="https://itunes.apple.com/us/book/life-as-sport/id1073407286?mt=11" class="button__iBooks" target="_blank">
