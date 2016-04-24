@@ -66,6 +66,15 @@ $book: 'page-template-template-book';
     position: relative;
     @include cover();
 
+    /* FIXME: Temporary */
+    img {
+      clear: both;
+      display: block;
+      margin: 0;
+      width: 100%;
+      max-width: 322px;
+    }
+
     h2 {
       margin-top: 0;
     }
