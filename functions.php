@@ -34,3 +34,13 @@ function is_external($url) {
   $link = parse_url( $url );
   return ( false === strpos( $link['host'], $_SERVER['SERVER_NAME'] ) ) ? false : true;
 }
+
+/**
+ * Wraps oEmbeds in an embed container
+ *
+ */
+function oembed_video_container( $html, $url, $attr, $post_id ) {
+  return '<div class="embed__container">' . $html . '</div>';
+}
+
+add_filter( 'embed_oembed_html', 'oembed_video_container', 99, 4 );
