@@ -5,8 +5,8 @@
 
   footer {
     @include text-style();
-    background: $gray-light;
-    color: $midnight;
+    background: $purple;
+    color: $white;
     margin-bottom: 0;
     width: 100%;
 
@@ -29,5 +29,16 @@
   padding-top: 100px;
   .entry-title {
     margin-top: 0;
+  }
+}
+
+.author__meta {
+  font-weight: 600;
+
+  img {
+    border-radius: 200px;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
   }
 }
