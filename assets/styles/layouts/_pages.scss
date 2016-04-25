@@ -68,7 +68,7 @@ $book: 'page-template-template-book';
   }
   .hero {
     background: url(#{$asset-path}images/home-hero.jpg) no-repeat center center;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
     position: relative;
     @include cover();
 
@@ -236,7 +236,7 @@ $book: 'page-template-template-book';
   }
 
   .hero {
-    min-height: 42vw;
+    min-height: 36vw;
   }
 
   .#{$book} {
