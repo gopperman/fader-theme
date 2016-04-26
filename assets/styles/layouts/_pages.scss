@@ -54,15 +54,14 @@ $book: 'page-template-template-book';
     margin-bottom: 20px;
   }
 }
+
 .#{$home} {
   .banner {
     .container-fluid {
       max-width: $constrain-home;
     }
   }
-}
 
-.#{$home} {
   .button__cta {
     margin-top: 1em;
   }
@@ -77,7 +76,7 @@ $book: 'page-template-template-book';
       clear: both;
       display: block;
       margin: 0;
-      width: 100%;
+      width: 60%;
       max-width: 322px;
     }
 
@@ -237,6 +236,14 @@ $book: 'page-template-template-book';
 
   .hero {
     min-height: 36vw;
+  }
+
+  .#{$home} {
+    .hero {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .#{$book} {
