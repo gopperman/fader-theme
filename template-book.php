@@ -57,7 +57,7 @@ while ( have_posts() ) : the_post();
   </div>
   <div class="worksheets">
     <div class="container-fluid">
-      <h3>Worksheets</h3>
+      <h3>Resources</h3>
       <p><?php echo wp_kses_post( $worksheet_instructions ); ?></p>
       <div class="row">
         <?php foreach ( $worksheets as $ws ) { ?>
