@@ -23,16 +23,22 @@ while ( have_posts() ) : the_post();
         <a href="<?php echo esc_url( $hero['ctas']['link'] ); ?>" class="button__cta"<?php if ( ! is_external( $hero['ctas']['link'] ) ) { ?> target="_blank"<?php } ?>>
           <?php echo wp_kses_post( $hero['ctas']['text'] ); ?>
         </a>
-        <a href="https://itunes.apple.com/us/book/life-as-sport/id1073407286?mt=11" class="button__iBooks" target="_blank">
-          <img src="/app/themes/fader/assets/images/iBooks.png" alt="iBook" />
-        </a>
       </div>
     </div>
+  </div>
+  <div class="availability-strip">
+    <p class="container-fluid">
+      <a target="_blank" href="//www.barnesandnoble.com/w/life-as-sport-jonathan-fader/1122344527?ean=9780738218953"><img src="/app/themes/fader/assets/images/barnes-noble-logo.png" alt="Barnes & Noble" /></a>
+      <a target="_blank" href="//www.indiebound.org/book/9780738218953"><img src="/app/themes/fader/assets/images/indiebound-logo.png" alt="IndieBound" /></a>
+      <a target="_blank" href="//itunes.apple.com/us/book/life-as-sport/id1073407286?mt=11"><img src="/app/themes/fader/assets/images/itunes-logo.png" alt="iTunes" /></a>
+      <a target="_blank" href="//www.amazon.com/Life-Sport-Athletes-Teach-about/dp/0738218952/ref=asap_bc?ie=UTF8"><img src="/app/themes/fader/assets/images/amazon-logo.png" alt="Amazon.com" /></a>
+      <a target="_blank" href="//www.booksamillion.com/p/Life-Sport/Jonathan-Fader/9780738218953?id=6600455739828"><img src="/app/themes/fader/assets/images/BAM-logo.png" alt="Books A Million" /></a>
+    </p>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-8">
-        <?= the_content(); ?>
+        <?php echo the_content(); ?>
       </div>
       <div class="col-sm-4 excerpts">
         <h3>Excerpts</h3>
