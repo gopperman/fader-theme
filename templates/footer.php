@@ -1,5 +1,6 @@
 <footer class="content-info">
   <div class="container">
+    <p class="contact-info">Contact Jonathan at <a href="tel:212-777-3601">212-777-3601</a> or <a href="#" data-toggle="modal" data-target="#contact">by email</a>.
     <p>&copy; Jonathan Fader. All Rights Reserved. By <a href="http://gopperman.com">gopperman</a>.</p>
   </div>
 </footer>
