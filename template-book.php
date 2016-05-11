@@ -79,4 +79,16 @@ while ( have_posts() ) : the_post();
       </div>
     </div>
   </div>
+  <div class="author-about">
+    <div class="container-fluid">
+      <div class="row author__meta">
+        <div class="col-sm-3">
+          <?php echo wp_kses_post( get_avatar( get_the_author_meta( 'email' ), 256 ) ); ?>
+        </div>
+        <div class="col-sm-9">
+          <?= the_author_meta( 'description' ); ?>
+        </div>
+      </div>
+    </div>
+  </div>
 <?php endwhile; ?>
