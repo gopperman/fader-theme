@@ -13,7 +13,7 @@
         <h1><?php echo wp_kses_post( $header['header_text'] ); ?></h1>
         <h2><?php echo wp_kses_post( $header['header_description'] ); ?></h2>
         -->
-        <img src="http://fader.gopperman.com/app/uploads/2016/04/life-as-sport-cover-resize-website.png">
+        <img src="http://jonathanfader.com/app/uploads/2016/02/3dbook.png">
         <?php if ( isset( $header['ctas'] ) ) {
           foreach ( $header['ctas'] as $cta ) { ?>
             <a class="button__cta button__cta-purple" href="<?php echo esc_url( get_permalink( $cta['link'] ) ); ?>"<?php if ( ! is_external( get_permalink( $cta['link'] ) ) ) { ?> target="_blank"<?php } ?>><?php echo wp_kses_post( $cta['text'] ); ?></a>
