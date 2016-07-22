@@ -6,21 +6,18 @@
   $product = get_post_meta( $id, 'homepage_product' )[0];
 ?>
 <div id="content-header" class="hero">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6">
-        <!-- Temporarily Gone
-        <h1><?php echo wp_kses_post( $header['header_text'] ); ?></h1>
-        <h2><?php echo wp_kses_post( $header['header_description'] ); ?></h2>
-        -->
-        <img src="http://jonathanfader.com/app/uploads/2016/02/3dbook.png">
-        <?php if ( isset( $header['ctas'] ) ) {
-          foreach ( $header['ctas'] as $cta ) { ?>
-            <a class="button__cta button__cta-purple" href="<?php echo esc_url( get_permalink( $cta['link'] ) ); ?>"<?php if ( ! is_external( get_permalink( $cta['link'] ) ) ) { ?> target="_blank"<?php } ?>><?php echo wp_kses_post( $cta['text'] ); ?></a>
-          <?php }
-        } ?>
-      </div>
-    </div>
+  <video class="hero__video" width="100%" height="100%" poster="/app/themes/fader/assets/video/hero-poster.jpg" autoplay loop>
+    <source src="/app/themes/fader/assets/video/hero.webm" type="video/webm">
+    <source src="/app/themes/fader/assets/video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="centered">
+    <h1><?php echo wp_kses_post( $header['header_text'] ); ?></h1>
+    <h2><?php echo wp_kses_post( $header['header_description'] ); ?></h2>
+    <?php if ( isset( $header['ctas'] ) ) {
+      foreach ( $header['ctas'] as $cta ) { ?>
+        <a class="button__cta button__cta-purple" href="<?php echo esc_url( get_permalink( $cta['link'] ) ); ?>"<?php if ( ! is_external( get_permalink( $cta['link'] ) ) ) { ?> target="_blank"<?php } ?>><?php echo wp_kses_post( $cta['text'] ); ?></a>
+      <?php }
+    } ?>
   </div>
 </div>
 <div class="about">

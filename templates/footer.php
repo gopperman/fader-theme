@@ -1,7 +1,11 @@
 <footer class="content-info">
-  <div class="container">
-    <p class="contact-info">Contact Jonathan at <a href="tel:212-777-3601">212-777-3601</a> or <a href="#" data-toggle="modal" data-target="#contact">by email</a>.
-    <p>&copy; Jonathan Fader. All Rights Reserved. By <a href="http://gopperman.com">gopperman</a>.</p>
+  <div id="contact-info">
+    <div class="container">
+      <p>Contact Jonathan at <a href="tel:212-777-3601">212-777-3601</a> or <a href="#" data-toggle="modal" data-target="#contact">by email</a>.</p>
+    </div>
+  </div>
+  <div id="copyright">
+    <p><span class="alignleft">&copy; Jonathan Fader. All Rights Reserved.</span> <span class="alignright">By <a href="http://gopperman.com">gopperman</a>.</span></p>
   </div>
 </footer>
 <div id="contact" class="modal fade">
