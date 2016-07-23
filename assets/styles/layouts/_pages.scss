@@ -1,5 +1,6 @@
-$home: 'home';
-$book: 'page-template-template-book';
+$home:  'home';
+$book:  'page-template-template-book';
+$media: 'page-template-template-media';
 
 .page {
   padding-top: 0;
@@ -72,7 +73,8 @@ $book: 'page-template-template-book';
 
   .hero {
     background: url(#{$asset-path}/images/home-hero.jpg) no-repeat center center fixed;
-    padding: 0 25px 25px;
+    margin: 0;
+    padding: $nav-offset 25px 25px;
     position: relative;
     text-align: left;
     @include cover();
@@ -90,6 +92,30 @@ $book: 'page-template-template-book';
   }
 }
 
+.#{$media} {
+  .hero {
+    background: url(#{$asset-path}images/speaking-hero.png) no-repeat center center fixed;
+    margin:  0;
+    padding: $nav-offset 25px 25px;
+    position: relative;
+    @include cover();
+
+    h1, h2 {
+      color: $white;
+    }
+  }
+
+  .overlay {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+}
 .#{$book} {
 	.hero {
 		background: url(#{$asset-path}images/book-hero.jpg) no-repeat center center fixed;
