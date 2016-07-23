@@ -65,27 +65,17 @@ $book: 'page-template-template-book';
   .button__cta {
     margin-top: 1em;
   }
+
   .hero__video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translate(-50%, -50%);
+    display: none;
   }
 
   .hero {
-    background: rgba(0,0,0,.5);
-    padding: 0 0 25px;
+    background: url(#{$asset-path}/images/home-hero.jpg) no-repeat center center fixed;
+    padding: 0 25px 25px;
     position: relative;
-    text-align: center;
-
-    h1, h2 {
-      color: $white;
-    }
+    text-align: left;
+    @include cover();
 
     h2 {
       margin-top: 0;
@@ -154,7 +144,8 @@ $book: 'page-template-template-book';
 }
 
 .product {
-  margin: 50px 0 25px;
+  background: $white;
+  padding: 50px 0 25px;
 
   p {
     color: $gray;
@@ -298,6 +289,28 @@ $book: 'page-template-template-book';
   }
 }
 @media only screen and (min-width: 992px) {
+  .#{home} {
+    .hero {
+      background: rgba(0,0,0,.5);
+      text-align: center;
+
+      h1, h2 {
+        color: $white;
+      }
+    }
+    .hero__video {
+      display: block;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translate(-50%, -50%);
+    }
+  }
   .#{$book} {
     .hero__description {
       padding-top: 50px;
