@@ -96,7 +96,7 @@ $media: 'page-template-template-media';
   .hero {
     background: url(#{$asset-path}images/speaking-hero.png) no-repeat center center fixed;
     margin:  0;
-    padding: $nav-offset 25px 25px;
+    padding: 100px 25px 50px;
     position: relative;
     @include cover();
 
