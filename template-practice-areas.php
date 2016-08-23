@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post();
           <ul class="practice-areas__nav">
             <?php $first = true;
             foreach ($practice_areas as $area) { ?>
-              <li class="practice-areas__nav--item<?php if ($first) echo ' practice-areas__nav--item-active'; ?>"><?php echo wp_kses_post( $area['title'] ); ?>
+              <li data-title="<?php echo wp_kses_post( $area['title'] ); ?>" class="practice-areas__nav--item<?php if ($first) echo ' practice-areas__nav--item-active'; ?>"><?php echo wp_kses_post( $area['title'] ); ?>
             <?php $first = false;
             } ?>
           </ul>
@@ -31,7 +31,7 @@ while ( have_posts() ) : the_post();
         <div class="col-md-8 col-lg-9 practice-areas__container">
           <?php $first = true;
           foreach ($practice_areas as $area) { ?>
-            <div class="practice-areas__section<?php if ($first) echo ' practice-areas__section--active'; ?>">
+            <div data-title="<?php echo wp_kses_post( $area['title'] ); ?>" class="practice-areas__section<?php if ($first) echo ' practice-areas__section--active'; ?>">
               <h3 class="practice-areas__title"><?php echo wp_kses_post( $area['title'] ); ?></h3>
               <?php echo wp_kses_post( $area['content']); ?>
               <p><a href="<?php echo esc_url( get_permalink( $area['link'] ) ); ?>">Learn More about <?php echo wp_kses_post( $area['title'] ); ?></a></p>

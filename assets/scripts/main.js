@@ -74,21 +74,33 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  // Contact Form Click Handlers
+  jQuery(document).ready( function() {
+    jQuery('.wpcf7-text').on( 'focusin', function() {
+      var el = jQuery(this);
+      var label = el.parents('p').find('label');
+      jQuery(label).css("top", 40);
+    });
+
+    jQuery('.wpcf7-text').on( 'focusout', function() {
+      var el = jQuery(this);
+      if ( '' === el.val() ) {
+        var label= el.parents('p').find('label');
+        jQuery(label).css("top", 0);
+      }
+    });
+
+    $('.practice-areas__nav--item').click(function() {
+      var self = $(this);
+      $('.practice-areas__nav--item').removeClass('practice-areas__nav--item-active');
+      $('.practice-areas__section--active').fadeOut(400, function() {
+        var title = self.data('title');
+        $(this).removeClass('practice-areas__section--active');
+        $('.practice-areas__section[data-title="' + title + '"]').fadeIn(400, function() {
+          self.addClass('practice-areas__nav--item-active');
+          $(this).addClass('practice-areas__section--active');
+        });
+      });
+    });
+  });
 })(jQuery); // Fully reference jQuery after this point.
-
-// Contact Form Click Handlers
-jQuery(document).ready( function() {
-  jQuery('.wpcf7-text').on( 'focusin', function() {
-    var el = jQuery(this);
-    var label = el.parents('p').find('label');
-    jQuery(label).css("top", 40);
-  });
-
-  jQuery('.wpcf7-text').on( 'focusout', function() {
-    var el = jQuery(this);
-    if ( '' === el.val() ) {
-      var label= el.parents('p').find('label');
-      jQuery(label).css("top", 0);
-    }
-  });
-});
