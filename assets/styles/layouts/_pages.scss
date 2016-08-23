@@ -87,7 +87,7 @@ $media: 'page-template-template-media';
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 100%;
+      width: 80%;
     }
   }
 }
@@ -205,7 +205,7 @@ $media: 'page-template-template-media';
     }
   }
 }
-.testimonials {
+.testimonials, .featured-posts {
   margin-top: 20px;
   padding-bottom: 50px;
 
@@ -222,6 +222,11 @@ $media: 'page-template-template-media';
   strong {
     font-weight: normal;
     font-size: 18px;
+  }
+
+  img {
+    margin: 5px 0;
+    max-width: 100%;
   }
 }
 
@@ -295,7 +300,7 @@ $media: 'page-template-template-media';
     text-align: left;
   }
 
-  .testimonials {
+  .testimonials, .featured-posts {
     h4 {
       margin-left: 0;
       text-align: center;
@@ -314,6 +319,7 @@ $media: 'page-template-template-media';
     }
   }
 }
+
 @media only screen and (min-width: 992px) {
   .#{home} {
     .hero {
@@ -322,6 +328,9 @@ $media: 'page-template-template-media';
 
       h1, h2 {
         color: $white;
+      }
+      .centered {
+        width: 100%;
       }
     }
     .hero__video {
