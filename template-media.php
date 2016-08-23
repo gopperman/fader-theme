@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post();
     <?php if ( count( $videos ) ) { ?>
     <div class="media__videos">
       <div class="container-fluid">
-        <h2>Recent Appearances</h2>
+        <h2>Media Appearances</h2>
         <?php foreach ($videos as $video) { ?>
           <div class="col-sm-6 col-md-4">
             <div class="media__video">
