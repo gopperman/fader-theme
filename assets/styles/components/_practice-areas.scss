@@ -18,6 +18,9 @@ $module: 'practice-areas';
 
       &-active {
         text-decoration: underline;
+        a {
+          color: $midnight;
+        }
       }
     }
   }
