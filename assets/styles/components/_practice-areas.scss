@@ -1,6 +1,52 @@
 $module: 'practice-areas';
 
+.sport-psychology {
+  .#{$module} {
+    &__hero {
+      background: url(#{$asset-path}images/PA_sp.png) no-repeat center center;
+      @include cover();
+    }
+  }
+}
+
+.motivational-interviewing {
+  .#{$module} {
+    &__hero {
+      background: url(#{$asset-path}images/PA_mit.png) no-repeat center center;
+      @include cover();
+    }
+  }
+}
+
 .#{$module} {
+  &__hero {
+    background: url(#{$asset-path}images/PA_cbt.png) no-repeat center center;
+    position: relative;
+    text-align: center;
+    @include cover();
+
+    &.hero {
+      margin: 0 0 30px 0;
+    }
+
+    .centered {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+
+    p {
+      margin: 1em auto;
+      max-width: 75%;
+    }
+
+    h2, p {
+      color: $white;
+    }
+  }
+
   &__nav {
     list-style: none;
     padding-left: 0;
@@ -30,6 +76,22 @@ $module: 'practice-areas';
 
     &--active {
       display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .#{$module} {
+    &__hero.hero {
+      min-height: 26vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .#{$module} {
+    &__hero {
+      background-attachment: fixed;
     }
   }
 }

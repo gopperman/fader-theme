@@ -12,8 +12,8 @@ while ( have_posts() ) : the_post();
   $featured_posts = get_post_meta( $id, 'featured_posts' )[0];
 ?>
 
-  <div id="content-header" class="hero">
-    <div class="container-fluid">
+  <div id="content-header" class="practice-areas__hero hero">
+    <div class="centered">
       <h2><?php echo wp_kses_post( get_the_title() ); ?></h2>
       <p><?php echo wp_kses_post( $hero['description'] ); ?></p>
     </div>
