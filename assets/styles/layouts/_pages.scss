@@ -72,15 +72,20 @@ $media: 'page-template-template-media';
   }
 
   .hero {
-    background: url(#{$asset-path}/images/home-hero.jpg) no-repeat center center fixed;
+    background: url(#{$asset-path}/images/home-hero.jpg) no-repeat center center;
     margin: 0;
     padding: $nav-offset 25px 25px;
     position: relative;
     text-align: left;
     @include cover();
 
+    h1 {
+      font-size: 42px;
+    }
+
     h2 {
       margin-top: 0;
+      max-width: 70%;
     }
 
     .centered {

@@ -6,7 +6,7 @@
   $product = get_post_meta( $id, 'homepage_product' )[0];
 ?>
 <div id="content-header" class="hero">
-  <video class="hero__video" width="100%" height="100%" poster="/app/themes/fader/assets/video/hero-poster.jpg" autoplay loop>
+  <video class="hero__video" width="100%" height="100%" poster="/app/themes/fader/assets/images/hero-poster.jpg" autoplay loop>
     <source src="/app/themes/fader/assets/video/hero.webm" type="video/webm">
     <source src="/app/themes/fader/assets/video/hero.mp4" type="video/mp4">
   </video>
