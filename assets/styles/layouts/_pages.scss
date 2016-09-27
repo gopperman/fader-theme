@@ -334,6 +334,11 @@ $media: 'page-template-template-media';
       h1, h2 {
         color: $white;
       }
+
+      h2 {
+        max-width: 100%;
+      }
+
       .centered {
         width: 100%;
       }
