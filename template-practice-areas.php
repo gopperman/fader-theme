@@ -22,7 +22,7 @@ while ( have_posts() ) : the_post();
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 col-lg-3">
-          <h3>Practice Areas</h3>
+          <h3>Specialties</h3>
           <ul class="practice-areas__nav">
             <?php foreach ($practice_areas as $area) { ?>
               <li class="practice-areas__nav--item<?php if ( $id === $area->ID ) echo ' practice-areas__nav--item-active'; ?>">
