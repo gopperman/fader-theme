@@ -37,6 +37,9 @@ while ( have_posts() ) : the_post();
   <? } ?>
   <div class="clients">
     <div class="container-fluid">
+      <?php if ( isset( $clients['header_text'] ) ) {
+        echo wp_kses_post('<p>' . $clients['header_text'] . '</p>');
+      } ?>
       <?php if ( isset( $clients['image'] ) ) {
         foreach ($clients['image'] as $logo) { ?>
            <img src="<?php echo esc_url( wp_get_attachment_image_src( $logo, 'full' )[0] ); ?>" />
@@ -46,9 +49,6 @@ while ( have_posts() ) : the_post();
   </div>
   <div class="author-about">
     <div class="container-fluid">
-      <?php if ( isset( $clients['header_text'] ) ) {
-        echo wp_kses_post('<p>' . $clients['header_text'] . '</p>');
-      } ?>
       <div class="row author__meta">
         <div class="col-sm-3"><?php echo wp_kses_post( get_avatar( get_the_author_meta( 'email' ), 256 ) ); ?></div>
         <div class="col-sm-9"><?php echo wp_kses_post( the_author_meta( 'description' ) ); ?></div>
