@@ -6,6 +6,7 @@ while ( have_posts() ) : the_post();
   $id = get_the_ID();
   $hero = get_post_meta( $id, 'content_header')[0];
   $videos = get_post_meta( $id, 'media_videos' )[0];
+  $clients = get_post_meta( $id, 'media_clients')[0];
 ?>
 
   <div id="content-header" class="hero">
@@ -34,6 +35,15 @@ while ( have_posts() ) : the_post();
       </div>
     </div>
   <? } ?>
+  <div class="clients">
+    <div class="container-fluid">
+      <?php if ( isset( $clients['image'] ) ) {
+        foreach ($clients['image'] as $logo) { ?>
+           <img src="<?php echo esc_url( wp_get_attachment_image_src( $logo, 'full' )[0] ); ?>" />
+        <?php }
+      } ?>
+    </div>
+  </div>
   <div class="author-about">
     <div class="container-fluid">
       <div class="row author__meta">

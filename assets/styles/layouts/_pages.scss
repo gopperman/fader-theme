@@ -27,6 +27,34 @@ $media: 'page-template-template-media';
   }
 }
 
+.availability-strip, .clients {
+  background: $gray-light;
+  margin-bottom: 25px;
+  text-align: center;
+
+  p, div {
+    color: $gray;
+    line-height: 57px;
+    margin: 0 auto;
+  }
+
+  img {
+    display: inline-block;
+    margin: 1em;
+    vertical-align: middle;
+  }
+}
+
+.clients {
+  margin: 0;
+  padding: 25px 0;
+
+  p {
+    line-height: 1em;
+    margin-top: .6em;
+  }
+}
+
 .content__area {
   color: $white;
   padding: 50px 10px;
@@ -126,22 +154,6 @@ $media: 'page-template-template-media';
 		background: url(#{$asset-path}images/book-hero.jpg) no-repeat center center fixed;
     margin: $nav-offset 0 0 0;
     @include cover();
-  }
-  .availability-strip {
-    background: $gray-light;
-    margin-bottom: 25px;
-    text-align: center;
-
-    p {
-      line-height: 57px;
-      margin: 0 auto;
-    }
-
-    img {
-      display: inline-block;
-      margin: 1em;
-      vertical-align: middle;
-    }
   }
 }
 

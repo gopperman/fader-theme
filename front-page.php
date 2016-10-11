@@ -4,6 +4,7 @@
   $about = get_post_meta( $id, 'homepage_about' )[0];
   $content = get_post_meta( $id, 'homepage_content')[0];
   $product = get_post_meta( $id, 'homepage_product' )[0];
+  $clients = get_post_meta( $id, 'homepage_clients' )[0];
 ?>
 <div id="content-header" class="hero">
   <video class="hero__video" width="100%" height="100%" poster="/app/themes/fader/assets/images/hero-poster.jpg" autoplay loop>
@@ -52,5 +53,17 @@
         <?php echo wp_kses_post( $product['cta']['text'] ); ?>
       </a>
     </div>
+  </div>
+</div>
+<div class="clients">
+  <div class="container-fluid">
+    <?php if ( isset( $clients['header_text'] ) ) {
+      echo wp_kses_post('<p>' . $clients['header_text'] . '</p>');
+    } ?>
+    <?php if ( isset( $clients['image'] ) ) {
+      foreach ($clients['image'] as $logo) { ?>
+         <img src="<?php echo esc_url( wp_get_attachment_image_src( $logo, 'full' )[0] ); ?>" />
+      <?php }
+    } ?>
   </div>
 </div>
