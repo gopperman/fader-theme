@@ -2,8 +2,9 @@ $module: 'practice-areas';
 
 .sport-psychology {
   .#{$module} {
-    &__hero {
-      background: url(#{$asset-path}images/PA_sp.png) no-repeat center center;
+    &__hero.hero {
+      margin-top: $nav-offset;
+      background: url(#{$asset-path}images/sports2-sm.jpg) no-repeat center center;
       @include cover();
     }
   }
