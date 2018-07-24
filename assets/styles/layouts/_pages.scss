@@ -100,7 +100,7 @@ $media: 'page-template-template-media';
   }
 
   .hero {
-    background: url(#{$asset-path}/images/tedx.png) no-repeat center center;
+    background: url(#{$asset-path}/images/tedx.jpg) no-repeat center center;
     margin: $nav-offset 0 0 0;
     padding: $nav-offset 25px 25px;
     position: relative;
@@ -357,7 +357,7 @@ $media: 'page-template-template-media';
 
     .hero {
       .centered {
-        padding-left: 5%;
+        padding-left: 2%;
         width: 100%;
       }
     }
