@@ -100,12 +100,16 @@ $media: 'page-template-template-media';
   }
 
   .hero {
-    background: url(#{$asset-path}/images/home-hero.jpg) no-repeat center center;
-    margin: 0;
+    background: url(#{$asset-path}/images/tedx.png) no-repeat center center;
+    margin: $nav-offset 0 0 0;
     padding: $nav-offset 25px 25px;
     position: relative;
     text-align: left;
     @include cover();
+
+    h1, h2 {
+      color: $white;
+    }
 
     h1 {
       font-size: 24px;
@@ -113,7 +117,6 @@ $media: 'page-template-template-media';
 
     h2 {
       margin-top: 0;
-      max-width: 70%;
     }
 
     .centered {
@@ -127,15 +130,10 @@ $media: 'page-template-template-media';
 
 .#{$media} {
   .hero {
-    background: url(#{$asset-path}images/speaking-hero.png) no-repeat center center fixed;
     margin:  0;
     padding: 100px 25px 50px;
     position: relative;
     @include cover();
-
-    h1, h2 {
-      color: $white;
-    }
   }
 
   .overlay {
@@ -306,6 +304,13 @@ $media: 'page-template-template-media';
   .#{$home} {
     .hero {
       min-height: 90vh;
+
+      h1 {
+        font-size: 56px;
+      }
+      h2 {
+        font-size: 36px;
+      }
     }
   }
 
@@ -349,19 +354,10 @@ $media: 'page-template-template-media';
 
 @media only screen and (min-width: 992px) {
   .#{home} {
+
     .hero {
-      background: rgba($midnight,.7);
-      text-align: center;
-
-      h1, h2 {
-        color: $white;
-      }
-
-      h2 {
-        max-width: 100%;
-      }
-
       .centered {
+        padding-left: 5%;
         width: 100%;
       }
     }
